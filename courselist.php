@@ -1,3 +1,10 @@
+<div class="topnav">
+  <a class="active" href="courselist.php">Quests</a>
+  <a href="logout.php">Logout</a>
+  <a href="dashboard.php">Home</a>
+  <a href="createcourse.php">Create a Quest</a>
+</div> 
+
 <?php
 include_once("partials/header.php");
 include_once("helpers/functions.php");

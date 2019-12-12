@@ -1,4 +1,18 @@
 <?php
+session_start();
+if(!($_SESSION['loggedIn']=='yes')){
+   header("Location:login.php");
+}
+?>
+
+<div class="topnav">
+  <a href="courselist.php">Quests</a>
+  <a href="logout.php">Logout</a>
+  <a href="dashboard.php">Home</a>
+  <a class="active" href="createcourse.php">Create a Quest</a>
+</div> 
+
+<?php
 include_once("partials/header.php");
 include_once("helpers/functions.php");
 ?>

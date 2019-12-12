@@ -1,3 +1,7 @@
+<div class="topnav">
+  <a href="login.php">Login</a>
+</div> 
+
 <?php
 session_start();
 session_unset();

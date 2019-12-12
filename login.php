@@ -1,3 +1,8 @@
+<div class="topnav">
+  <a href="login.php">Login</a>
+  <a href="registration.php">First time?</a>
+</div> 
+
 <?php
 session_start();
 ini_set('display_errors',1);
@@ -54,7 +59,7 @@ error_reporting(E_ALL);
 						echo $stmt->errorInfo();
 					}
 					
-					$_SESSION['user'] = $user;
+					$_SESSION['loggedIn'] = 'yes';
 					echo var_export($user, true);
 					echo var_export($_SESSION, true);
 					header("Location: dashboard.php");
